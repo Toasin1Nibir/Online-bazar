@@ -5,9 +5,10 @@ import { Link } from 'react-router-dom';
 const Order = () => {
     const [loggedInUser , setLoggedInUser] = useContext(UserContext)
     const [order ,setOrder] = useState([])
-      
+
     useEffect(() => {
-        fetch('http://localhost:4000/order?email=' + loggedInUser.email)
+        // fetch('http://localhost:4000/order?email=' + loggedInUser.email)
+        fetch('    https://ancient-headland-43589.herokuapp.com/order?email=' + loggedInUser.email)
             .then(res => res.json())
             .then(data => setOrder(data))
     }, [])
