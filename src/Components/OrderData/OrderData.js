@@ -1,25 +1,41 @@
 import React from 'react';
 
 const OrderData = (props) => {
-    const{name ,email,weight,price} = props.order
+    const{_id,name ,email,weight,price} = props.order
 
  
     return (
-        <div>
-               <table className="table w-20">
-                    <tr>
-                        <th>Name</th>
-                        <th>Weight</th>
-                        <th>Price</th>
-                        <th>Email</th>
-                    </tr>
-                    <tr>
-                        <td>{name}</td>
-                        <td>{weight}</td>
-                        <td>${price}</td>
-                        <td>{email}</td>
-                    </tr>
-                    
+        <div className='container'>
+            
+                 <table className="manage-product-table">
+                        <thead>
+                            <tr>
+                                <th> Name</th>
+                                <th>Weight</th>
+                                <th>Price</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        
+                            
+                                    <tr key ={_id}>
+                                        <td >
+                                            <p>{name}</p>
+                                        </td>
+                                        <td>
+                                            <p>{weight}</p>
+                                        </td>
+                                        <td>
+                                            <p>{price}</p>
+                                        </td>
+                                        <td>
+                                            <p>{email}</p>
+                                        </td>
+                                       
+                                    </tr>
+                                  
+                        </tbody>
                 </table>
                
               

@@ -18,7 +18,8 @@ const Login = () => {
     let { from } = location.state || { from: { pathname: "/" } };
     const [user, setUser] = useState({
         isSignedIn: false,
-        email: ''
+        email: '',
+        pic:''
         
     })
     var provider = new firebase.auth.GoogleAuthProvider();
@@ -28,7 +29,8 @@ const Login = () => {
             const { displayName ,photoURL ,email} = res.user;
             const SignedInuser = {
                 isSignedIn: true,
-                email: email
+                email: email, 
+                pic : photoURL
             }
             setLoggedInUser(SignedInuser)
             setUser(SignedInuser)

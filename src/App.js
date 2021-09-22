@@ -13,7 +13,7 @@ import Addproduct from './Components/Addproduct/Addproduct';
 import Home from './Components/Home/Home';
 import Checkout from './Components/Checkout/Checkout';
 import Manageproduct from './Components/Manageproduct/Manageproduct';
-import Data from './Components/Data/Data';
+
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 import Order from './Components/Order/Order';
 
@@ -42,9 +42,7 @@ function App() {
           <Route path="/manageproduct">
             <Manageproduct />
           </Route>
-          <Route path="/data">
-            <Data />
-          </Route>
+          
           <PrivateRoute path="/checkout/:id">
             <Checkout />
           </PrivateRoute>

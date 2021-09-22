@@ -29,7 +29,14 @@ const Home = () => {
                                 <Link to="/">Home</Link>
                                 <Link to="/order">Orders</Link>
                                 <Link to="/addproduct">Admin</Link>
-                                <Link to="/login"><button type="button" class="btn btn-success">login</button></Link>
+                               
+
+
+                                {
+                                    loggedInUser.email ? <img src={loggedInUser.pic} style={{height:'60px'}} class="rounded-circle" alt="100x100"/>:  <Link to="/login"><button type="button" class="btn btn-success">login</button></Link>
+                                }
+
+                             
                             </div>
                         </div>
                     </nav>
