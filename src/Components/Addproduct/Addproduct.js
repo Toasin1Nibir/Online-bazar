@@ -50,45 +50,7 @@ const handleimage = (event) =>{
 
 }
     return (
-    //   <div style={{textAlign:'center'}}>
-        
-    //     <div className='nav text-center'>
-    //       <nav>
-    //         <Link to="/manageproduct">Manage Product</Link>
-    //         <Link to= "/addproduct">Add Product</Link>
-    //         <Link to="/addproduct">Edit Product</Link>
-         
-    //       </nav>
-    //     </div>
-       
-    //   <form onSubmit={handleSubmit(onSubmit)}>
-    //     <label htmlFor="Product Name">Product Name</label>
-    //     <br />
-    //     <input name="name" placeholder="Enter name" ref={register} />
-    //     <br />
-    //     <label htmlFor="Product Name">Product Weight</label>
-    //     <br />
-    //     <input name="weight" ref={register} />
-    //     <br />
-    //     <label htmlFor="Product Name">Product Price</label>
-    //     <br />
-    //     <input name="price" ref={register} />
-    //     <br />
-    //     <input name="example" type='file' onChange={handleimage} />
-
-    //     {errors.exampleRequired && <span>This field is required</span>}
-
-    //     <input type="submit" />
-    //   </form>
-    // </div>
-
-
-
-
-
-
-
-
+  
 <div className='row s'>
 
 <div className="col-lg-2 p-0">

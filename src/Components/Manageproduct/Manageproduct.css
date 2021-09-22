@@ -82,6 +82,7 @@
 }
 .manage-product-table thead tr th:nth-child(2){
     width: 19%;
+    
 }
 .manage-product-table thead tr th:nth-child(3){
     width: 20%;
@@ -92,7 +93,7 @@
 .manage-product-table tbody{
     font-size: 18px;
     font-weight: 700;
-    color: #023e8a;
+    
 }
 .manage-product-table tbody tr td{
     padding: 15px 0;

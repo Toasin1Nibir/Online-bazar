@@ -7,8 +7,8 @@ const Order = () => {
     const [order ,setOrder] = useState([])
 
     useEffect(() => {
-        // fetch('http://localhost:4000/order?email=' + loggedInUser.email)
-        fetch('    https://ancient-headland-43589.herokuapp.com/order?email=' + loggedInUser.email)
+        
+        fetch('https://ancient-headland-43589.herokuapp.com/order?email=' + loggedInUser.email)
             .then(res => res.json())
             .then(data => setOrder(data))
     }, [])
@@ -17,8 +17,6 @@ const Order = () => {
 
         <div>
             <div className='d-flex'>
-
-
                 <div className='lg col-md-5'>
                     <h3>Online Bazar</h3>
                 </div>
@@ -33,18 +31,18 @@ const Order = () => {
                                 <Link to="/">Home</Link>
                                 <Link to="/order">Order</Link>
                                 <Link to="/addproduct">Admin</Link>
-                 
+
                                 {
                                     loggedInUser.email ? <img src={loggedInUser.pic} style={{ height: '60px' }} class="rounded-circle" alt="100x100" /> : <Link to="/login"><button type="button" class="btn btn-success">login</button></Link>
                                 }
                             </div>
+                        </div>
+                    </nav>
+                </div>
             </div>
-        </nav>
-    </div>
-</div>
-            <h3>You have {order.length} orders</h3>
-           {
-             order.map(order =><OrderData order={order}></OrderData>)
+            <h3 className='container'>You have {order.length} orders</h3>
+            {
+                order.map(order => <OrderData order={order}></OrderData>)
             }
         </div>
     );
